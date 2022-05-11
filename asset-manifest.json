@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aptive/static/css/main.6f621184.css",
+    "main.js": "/aptive/static/js/main.da0893ab.js",
+    "index.html": "/aptive/index.html",
+    "main.6f621184.css.map": "/aptive/static/css/main.6f621184.css.map",
+    "main.da0893ab.js.map": "/aptive/static/js/main.da0893ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f621184.css",
+    "static/js/main.da0893ab.js"
+  ]
+}
