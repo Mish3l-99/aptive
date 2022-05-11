@@ -1,41 +1,18 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Contact from "./components/Contact";
-import FAQ from "./components/FAQ";
 import Home from "./components/Home";
-import Layout from "./components/Layout";
-import Pricings from "./components/Pricings";
+import ContactPage from "./routes/Contact";
+import FAQPage from "./routes/FAQ";
+import PricingsPage from "./routes/Pricings";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-
-        <Route
-          path="/pricings"
-          element={
-            <Layout>
-              <Pricings />
-            </Layout>
-          }
-        />
-        <Route
-          path="/faq"
-          element={
-            <Layout>
-              <FAQ />
-            </Layout>
-          }
-        />
-        <Route
-          path="/contact"
-          element={
-            <Layout>
-              <Contact />
-            </Layout>
-          }
-        />
+        <Route path="/" element={<Home />} exact />
+        <Route path="/pricings" element={<PricingsPage />} />
+        <Route path="/faq" element={<FAQPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </>
   );
