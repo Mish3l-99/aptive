@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiX, FiMenu } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import Logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [MobNav, setMobNav] = useState(false);
@@ -10,11 +11,7 @@ const Navbar = () => {
       <div className="nav-container">
         <div className="logo">
           <Link to="/">
-            <img
-              className="h-8 md:h-10 object-cover"
-              src="/assets/logo.png"
-              alt="/"
-            />
+            <img className="h-8 md:h-10 object-cover" src={Logo} alt="/" />
           </Link>
         </div>
         <ul className="hidden md:flex">

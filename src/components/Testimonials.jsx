@@ -1,4 +1,5 @@
 import React from "react";
+import Testi from "../assets/testi.jpg";
 import { FaDatabase } from "react-icons/fa";
 
 const Testimonials = () => {
@@ -9,7 +10,7 @@ const Testimonials = () => {
           <div className="relative rounded-md overflow-hidden">
             <img
               className="h-[400px] md:max-h-[380px] w-full object-cover"
-              src="/assets/testi.jpg"
+              src={Testi}
               alt="/"
             />
             {/* layer */}
